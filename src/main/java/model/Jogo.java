@@ -1,52 +1,56 @@
 package model;
 
 public class Jogo {
-	private int timeA;
-	private int timeB;
-	private int golsA;
-	private int golsB;
-	private int rodada;
+	private String timeA;
+	private String timeB;
+	private int golsTimeA;
+	private int golsTimeB;
 	private String data;
-	public int getTimeA() {
+
+	public String getTimeA() {
 		return timeA;
 	}
-	public void setTimeA(int timeA) {
+
+	public void setTimeA(String timeA) {
 		this.timeA = timeA;
 	}
-	public int getTimeB() {
+
+	public String getTimeB() {
 		return timeB;
 	}
-	public void setTimeB(int timeB) {
+
+	public void setTimeB(String timeB) {
 		this.timeB = timeB;
 	}
-	public int getGolsA() {
-		return golsA;
+
+	public int getGolsTimeA() {
+		return golsTimeA;
 	}
-	public void setGolsA(int golsA) {
-		this.golsA = golsA;
+
+	public void setGolsTimeA(int golsTimeA) {
+		this.golsTimeA = golsTimeA;
 	}
-	public int getGolsB() {
-		return golsB;
+
+	public int getGolsTimeB() {
+		return golsTimeB;
 	}
-	public void setGolsB(int golsB) {
-		this.golsB = golsB;
+
+	public void setGolsTimeB(int golsTimeB) {
+		this.golsTimeB = golsTimeB;
 	}
-	public int getRodada() {
-		return rodada;
-	}
-	public void setRodada(int rodada) {
-		this.rodada = rodada;
-	}
+
 	public String getData() {
 		return data;
 	}
+
 	public void setData(String data) {
 		this.data = data;
 	}
+
 	@Override
 	public String toString() {
-		return "Jogo [timeA=" + timeA + ", timeB=" + timeB + ", golsA=" + golsA + ", golsB=" + golsB + ", rodada="
-				+ rodada + ", data=" + data + "]";
+		return "Jogo [timeA=" + timeA + ", timeB=" + timeB + ", golsTimeA=" + golsTimeA + ", golsTimeB=" + golsTimeB
+				+ ", data=" + data + "]";
 	}
 
 }

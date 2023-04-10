@@ -1,23 +1,27 @@
 package model;
 
 public class Grupo {
-	private int time;
-	private int grupo;
-	public int getTime() {
-		return time;
-	}
-	public void setTime(int time) {
-		this.time = time;
-	}
-	public int getGrupo() {
+	private String grupo;
+	private String time;
+
+	public String getGrupo() {
 		return grupo;
 	}
-	public void setGrupo(int grupo) {
+
+	public void setGrupo(String grupo) {
 		this.grupo = grupo;
 	}
-	@Override
-	public String toString() {
-		return "Grupo [time=" + time + ", grupo=" + grupo + "]";
+
+	public String getTime() {
+		return time;
 	}
 
+	public void setTime(String time) {
+		this.time = time;
+	}
+
+	@Override
+	public String toString() {
+		return "Grupo [grupo=" + grupo + ", time=" + time + "]";
+	}
 }
